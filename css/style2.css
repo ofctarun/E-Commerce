@@ -1,0 +1,222 @@
+/* General Body and Layout */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%; /* Ensures full width */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Updated navigation styling to align buttons in one row */
+nav {
+    display: flex;
+    align-items: center; /* Align buttons vertically centered */
+}
+
+nav a, .logout-button {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav a:hover, .logout-button:hover {
+    text-decoration: underline;
+}
+
+.logout-button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #e84e2f;
+}
+
+/* Cart Link - Fixed beside Register button */
+.cart-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.cart-link:hover {
+    color: #16a085;
+}
+
+.cart-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+/* Main Container */
+.main-container {
+    padding: 40px 110px 110px 110px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows responsiveness */
+    background-color: hsl(30, 38%, 92%);
+}
+
+.intro {
+    font-family: 'Lavishly Yours', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+/* Product Listing */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%; /* Take up most of the screen */
+}
+
+.product {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 600px;
+    height: 480px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product h3 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.product p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 50%;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-details {
+    font-family: 'Fraunces', serif;
+    width: 50%; /* Ensures text takes the other half */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text vertically */
+    text-align: left;
+    box-sizing: border-box; 
+    justify-content: space-between;
+}
+
+.product-details .product-name{
+    font-family: 'Fraunces', serif;
+    color: #2c3e50;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.product-price{
+    color : hsl(228, 12%, 48%);
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.category {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.add-to-cart-button {
+    
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color:hsl(158, 36%, 37%);
+    transform: scale(1.05);
+}
+.add-to-cart-button:active {
+    background-color: hsl(158, 36%, 25%);
+    scale:0.95;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
